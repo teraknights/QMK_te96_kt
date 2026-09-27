@@ -15,7 +15,9 @@ te96（[e3w2q/te96-keyboard](https://github.com/e3w2q/te96-keyboard)）をオリ
 | `keymaps/via_custom/` | 上記と同じで PID のみ `0x7E96` に変更。Remap に未登録扱いさせ、自作の定義JSONを読み込ませる用 |
 | `keymaps/mapcheck/` | 配列調査用。どのキーも自分のマトリクス位置を `行,列 ` として入力する |
 | `firmware/*.hex` | 上記のビルド済みファームウェア |
+| `remap/te96_custom.json` | 実物どおりの定義（左24キー・右21キー）。PID `0x7E96`（via_custom）用 |
 | `remap/te96_rev1_inverted_grid.json` | 格子状（6×8×左右）の仮定義。PID `0x4651` 用 |
+| `scripts/make_remap_json.py` | `te96_custom.json` の生成元（配置・マトリクス対応を記述） |
 | `scripts/build.sh` | フォークの取得からビルドまで |
 
 ## キーマップ（via / via_custom）
